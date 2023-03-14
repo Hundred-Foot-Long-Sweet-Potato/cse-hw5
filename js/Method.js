@@ -16,7 +16,7 @@
         return response.json()
     }).then(data=> {
         //Taking relevant Data
-        document.getElementById('response').value = `Data Placed!:\nRecordID:${data.json.recordID}\nArticle Name:${data.json.articleName}\nArticleBody:${data.json.articleBody}\nDate:${data.json.date}`;
+        document.getElementById('response').value = `RecordID:${data.json.recordID}\nArticle Name:${data.json.articleName}\nArticleBody:${data.json.articleBody}\nDate:${data.json.date}`;
         console.log(data.json);
     })
     .catch(error=> console.log('POST ERROR'))
@@ -54,7 +54,7 @@ function putRequest()
         return response.json()
     }).then(data => {
         //Taking relevant Data
-        document.getElementById('response').value = `Data Placed!:\nRecordID:${data.json.recordID}\nArticle Name:${data.json.articleName}\nArticleBody:${data.json.articleBody}\nDate:${data.json.date}`;
+        document.getElementById('response').value = `RecordID:${data.json.recordID}\nArticle Name:${data.json.articleName}\nArticleBody:${data.json.articleBody}\nDate:${data.json.date}`;
         console.log(data);
     })
     .catch(error=> console.log('GET ERROR'))
